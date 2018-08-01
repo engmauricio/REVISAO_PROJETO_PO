@@ -16,19 +16,14 @@ public class Negocio {
     ArrayList<Double> Vbens = new ArrayList<>(); 
     private Double Qnt;
     private Double Preco;  
-    private Integer TipoNegocio;
+    ArrayList<String> TipoNegocio = new ArrayList<>();
     public static Double soma;
+    public static Double adicao;
     
     public Negocio(){
         
     }
-       
-//    public Negocio(Double Qnt, Double Preco){
-//        
-//        this.Preco = Preco;
-//        this.Qnt = Qnt;        
-//    }
-    
+        
      public void addVbens (Double Preco, Double Qnt) {
          Double op;
          op = Preco*Qnt;
@@ -39,15 +34,29 @@ public class Negocio {
         return Vbens;
     } 
     
-    public Double somaVbens(){
+    public Void GerarVbens(Double x, Double y){
     soma = 0.0;    
-    for(Double j:Vbens){
+    adicao = 0.0;
+    for(Double j: Vbens){
             soma = soma + j;
         }
+        adicao = soma - x*y;
         
-        return soma;
+        return null;
     }
+
+    public Double ExibeVbens(){
         
+        return adicao;
+    }
+    public void addTipoNegocio(String Tipo){
+        TipoNegocio.add(Tipo);
+    }
+    
+    public ArrayList<String> getTipoNegocio(){
+        return TipoNegocio;
+    }
+    
     public Double getQnt() {
         return Qnt;
     }

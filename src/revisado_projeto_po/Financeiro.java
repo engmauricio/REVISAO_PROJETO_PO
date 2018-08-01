@@ -13,14 +13,12 @@ import java.util.ArrayList;
  */
 public class Financeiro {
     
-    //private Double EntCapital;
-    //private Double SaiCapital;
+ 
     public static Double soma;
     public static Double adicao;
-    //private Double Relatorio;
     ArrayList<Double> EntCapital = new ArrayList<>();
     ArrayList<Double> SaiCapital = new ArrayList<>();
-    // public Double GerarSaldoCapital;
+   
     
     public Financeiro(){
         
@@ -37,22 +35,7 @@ public class Financeiro {
         }
        
         return soma - adicao;
-        }
-//    public Double GerarSaiCap(){
-//         soma = 0.0;
-//        for(Double i: EntCapital)
-//            soma = soma + i;
-//		
-//        return soma;
-//    }
-//    public Financeiro(Double EntCapital, Double SaiCapital, Double Relatorio){
-//        
-//        this.EntCapital = EntCapital;
-//        this.SaiCapital = SaiCapital;
-//        this.Relatorio = Relatorio;
-//        
-//    }
-    
+        } 
         
     public ArrayList<Double> getEntCapital() {
         return EntCapital;
@@ -68,28 +51,5 @@ public class Financeiro {
     public void addSaiCapital(Double Capital) {
        SaiCapital.add(Capital);
     }
-//
-//    public Double getSaiCapital() {
-//        return SaiCapital;
-//    }
-//
-//    public void setSaiCapital(Double SaiCapital) {
-//        this.SaiCapital = SaiCapital;
-//    }
-//
-//    public Double getRelatorio() {
-//        return Relatorio;
-//    
-//    }
-//
-//    public void setRelatorio(Double Relatorio) {
-//        this.Relatorio = Relatorio;
-//   
-//    }
-       
-//   public Double GerarSaldoCapital(){
-//       
-//       return  getEntCapital() - getSaiCapital();
-//          
-//    }
+
 }
