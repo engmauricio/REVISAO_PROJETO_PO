@@ -26,7 +26,7 @@ public class Financeiro {
         
     }
         
-    public Double GerarEntradaCap(){
+    public Double GerarCap(){
         soma = 0.0;
         adicao = 0.0;
         for(Double i: EntCapital){
